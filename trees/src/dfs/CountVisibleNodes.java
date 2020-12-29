@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class CountVisibleNodes {
 	public static int countVisibleNodes(Node root) {
         // WRITE YOUR BRILLIANT CODE HERE
-        // Start maxSoFar with smallest integer value possible so any value root has is smaller than it
         return dfs(root, Integer.MIN_VALUE);
     }
     private static int dfs(Node root, int maxSoFar) {
